@@ -1,0 +1,128 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 100svh;
+  & > div {
+    border: .1px solid var(--Text60)
+  }
+
+  grid-template-rows: auto 1fr;
+
+  grid-template-areas:
+  'allChats headerWrapper headerWrapper headerWrapper headerWrapper'
+  'chats message message message message'
+  ;
+}
+
+.allChats {
+  grid-area: allChats;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+
+  color: var(--Text100);
+  font-family: Lato;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.headerWrapper {
+  grid-area: headerWrapper;
+  height: 4rem;
+}
+
+.chats {
+  grid-area: chats;
+  height: 100%;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: .125rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--MainColors-Blue);
+    border-radius: .188rem;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--MainColors-Blue);
+  }
+}
+
+.message {
+  grid-area: message;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  align-items: center;
+}
+
+.chat {
+  grid-area: chat;
+}
+
+.chatWrapper {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 1rem 1.5rem;
+  &::-webkit-scrollbar {
+    width: .125rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--MainColors-Blue);
+    border-radius: .188rem;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--MainColors-Blue);
+  }
+}
+
+.messageWrapper {
+  display: grid;
+  width: 100%;
+}
+
+.myMessage {
+  justify-content: end;
+}
+
+.systemMessageWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .75rem;
+}
+
+.newMessageWrapper {
+  margin-bottom: .75rem;
+}
+
+.marginBottom10px {
+  margin-bottom: .625rem;
+}
+
+.marginBottom20px {
+  margin-bottom: 1.25rem;
+}
+
+
+@media screen and (max-width:700px) {
+  .container {
+    display: none;
+  }
+}

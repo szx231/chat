@@ -1,0 +1,74 @@
+.wrapper {
+  display: flex;
+  gap: .5rem;
+  max-width: 36.75rem;
+}
+
+.userInfo {
+  display: flex;
+  gap: .25rem;
+  flex-direction: column;
+}
+
+.userName {
+  color: var(--Text100);
+  font-family: Lato;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.7rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+}
+
+.descriptionContainer {
+  border-radius: .25rem;
+  background: var(--UI-Background);
+  padding: .5rem .75rem;
+}
+
+.description {
+  color: var(--text-100, #201F1E);
+  font-family: Lato;
+  font-size: .938rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-align: left;
+}
+
+.edited__container {
+  display: flex;
+  gap: 8px;
+  max-width: 73px;
+  float: right;
+
+  margin-top: .406rem;
+  margin-left: .625rem;
+}
+
+.edited {
+  color: var(--FIles);
+  font-family: Lato;
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: .563rem;
+  text-decoration-line: underline;
+}
+
+
+.userAvatar {
+  border-radius: .25rem;
+  min-width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.myMessage {
+  background-color: var(--SystemColors-BGSelected-opacity);
+}

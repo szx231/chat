@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 1.25rem 1rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.text {
+  color: var(--Themes-WhiteSoft-Text-Тext100);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}

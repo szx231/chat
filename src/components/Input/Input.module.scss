@@ -1,0 +1,53 @@
+.wrapper {
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
+
+.input {
+  padding: .625rem 1rem;
+  width: 100%;
+  border-radius: .25rem;
+  border: 1px solid var(--Text60);
+  background: var(--UI-White);
+  margin-bottom: .25rem;
+  outline: none;
+  color: var(--Text60);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  max-height: calc(1rem * 1.2 * 5);
+  overflow-y: auto;
+}
+
+.attachContainer {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(32, 31, 30, 0.04);
+  border-radius: .25rem;
+  padding: .375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filed {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+[contentEditable="true"]:empty:before {
+  content: attr(data-placeholder);
+  color: var(--Text60);
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
